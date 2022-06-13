@@ -1,42 +1,105 @@
-<!DOCTYPE>
-<head>
+<!DOCTYPE html>
 <html lang="pt-br">
-
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
+<head>
+     <meta charset="UTF-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+	 <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+	 <link rel="stylesheet" href="css/style.css">	 
 </head>
 <body>
 	<nav>
-		<img id="logo"src="img/logo-havan-w.svg" alt="logo">
+		<img id="logo" src="img/LogoFlyer.png" alt="Logo">
 		<ul id="menu">
-			<a href="index.html"><li>HOME</li></a>
-			<a href="contatos.html"><li>CONTATOS</li></a>
-			<a href="sobre.html"><li>SOBRE</li></a>
+			<li> <a href="index.html"> Home </a></li>
 		</ul>
 	</nav>
+	<section>
+		<div>
+			<form method="post" action="contatos.php">
+				<label> Digite Seu Nome: </label> </br>
+				<input type="text" name="nome"> </input> </br></br>
+				
+				<label> Digite Seu Email: </label> </br>
+				<input type="email" name="email"> </input> </br></br>
+	</section>
+	
+	<label> Primeiro Numero: </label>
+		<br><input type="text" name="NumeroA"></input></br>
+	
+	<label> Segundo Numero </label>
+		<br><input type="text" name="NumeroB"></input> </br>
+		    </form>
+			<p>Escolha a cidadania</p>
+			<p>
+				Inglês: <input type="radio" name="citizenship" /><br />
+				Brasileiro: <input type="radio" name="citizenship" /><br />
+				Espanhol: <input type="radio" name="citizenship" />
+			</p>
+			
+			<p>Escolha o sexo</p>
+			<p>
+				Homem: <input type="radio" name="sex" /><br />
+				Mulher: <input type="radio" name="sex" />
+			</p>
+	</div>
 
+	<div>
+		<label> Qual a area que voçê se desenvolve mais: </label>
+		<label> <input type="radio" nome="devweb" value="frontend" checked>Front-end 
+		</label>
+		<label> <input type="radio" nome="devweb" value="backend" checked>Back-end 
+		</label>
+		<label> <input type="radio" nome="devweb" value="fullstack" checked>Fullstack 
+		</label>
+	</div>
+	<fieldset>
+		<div>
+			<label> Selecione a Tecnologias que você mais entendi: </label>
+			<input type="chekbox" id="tecnologia1" name="tecnologia1" value="HTML">
+			<label for="tecnologia1">HTML</label>
+			<input type="chekbox" id="tecnologia2" name="tecnologia2" value="CSS">
+			<label for="tecnologia2">CSS</label>
+			<input type="chekbox" id="tecnologia3" name="tecnologia3" value="Javascript">
+			<label for="tecnologia3">Javascript</label>
+			<input type="chekbox" id="tecnologia4" name="tecnologia4" value="PHP">
+			<label for="tecnologia4">PHP</label>
+			<input type="chekbox" id="tecnologia5" name="tecnologia5" value="Phyton">
+			<label for="tecnologia5">Phyton</label>
+		</div>
+	</fieldset>
 
+	<div>
+		<br>
+		<label> compartilhe um pouco da sua experiência </label>
+		<textarea row="6" style="width: 26em" id="experiência" name="experiência"></textarea>
+	</div>
+    <div>
+		<select name="tipo-contato"> </br></br>
+			<br><option value="Duvida"> Duvidas </option> </br> 
+			<option value="Reclamações"> Reclamações </option> 
+			<option value="Informações"> Informações </option>
+		    <button type="submit">enviar</input>
+	</div>
+	
+	<footer>		
+		<div id="rodape">  </div>
+	</footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
 </html>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
